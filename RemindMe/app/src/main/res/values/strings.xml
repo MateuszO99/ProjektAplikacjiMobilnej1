@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">RemindMe</string>
+
+    <string name="title">Title</string>
+    <string name="description">Description</string>
+
+    <string name="date_btn">Date</string>
+    <string name="save_btn">Save</string>
+    <string name="cancel_btn">Cancel</string>
+
+    <string name="add_note">add note</string>
+
 </resources>

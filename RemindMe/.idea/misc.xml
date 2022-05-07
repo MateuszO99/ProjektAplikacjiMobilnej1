@@ -4,8 +4,13 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/AndroidProjects/Lista7/RemindMe/app/src/main/res/layout/activity_main.xml" value="0.3671875" />
+        <entry key="..\:/PAM1/RemindMe/app/src/main/res/layout/activity_edit_notes.xml" value="0.540625" />
         <entry key="..\:/PAM1/RemindMe/app/src/main/res/layout/activity_main.xml" value="0.3671875" />
+        <entry key="..\:/PAM1/RemindMe/app/src/main/res/layout/activity_note.xml" value="0.5546875" />
+        <entry key="..\:/PAM1/RemindMe/app/src/main/res/layout/activity_notes.xml" value="0.5546875" />
         <entry key="..\:/PAM1/RemindMe/app/src/main/res/layout/activity_reminder.xml" value="0.3671875" />
+        <entry key="..\:/PAM1/RemindMe/app/src/main/res/layout/notes_list.xml" value="0.5546875" />
+        <entry key="..\:/PAM1/RemindMe/app/src/main/res/menu/options_menu.xml" value="0.5546875" />
       </map>
     </option>
   </component>
