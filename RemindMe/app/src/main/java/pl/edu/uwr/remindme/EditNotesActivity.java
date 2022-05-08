@@ -82,7 +82,7 @@ public class EditNotesActivity extends AppCompatActivity {
                 } else {
                     notesDataBaseHelper.addNote(new NotesModel(title, description, data));
                 }
-                Intent intent1 = new Intent(EditNotesActivity.this, MainActivity.class);
+                Intent intent1 = new Intent(EditNotesActivity.this, NotesActivity.class);
                 intent1.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
                 startActivity(intent1);
             }
