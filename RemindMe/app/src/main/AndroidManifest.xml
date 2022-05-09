@@ -11,10 +11,12 @@
         android:theme="@style/Theme.RemindMe">
         <activity
             android:name=".EditNotesActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".NotesActivity"/>
         <activity
             android:name=".NoteActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".NotesActivity"/>
         <activity
             android:name=".SettingsActivity"
             android:exported="false"
