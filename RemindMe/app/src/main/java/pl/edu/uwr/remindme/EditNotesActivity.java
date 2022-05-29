@@ -19,10 +19,10 @@ public class EditNotesActivity extends AppCompatActivity {
 
     private int id;
 
-    private final Calendar calender = Calendar.getInstance();
-    private int year = calender.get(Calendar.YEAR);
-    private int month = calender.get(Calendar.MONTH);
-    private int day = calender.get(Calendar.DAY_OF_MONTH);
+    private final Calendar calendar = Calendar.getInstance();
+    private int year = calendar.get(Calendar.YEAR);
+    private int month = calendar.get(Calendar.MONTH);
+    private int day = calendar.get(Calendar.DAY_OF_MONTH);
 
     private NotesModel note;
 
