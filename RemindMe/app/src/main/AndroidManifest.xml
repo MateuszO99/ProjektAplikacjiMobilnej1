@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="pl.edu.uwr.remindme">
 
-    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY"/>
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
 
     <application
         android:allowBackup="true"
@@ -12,13 +12,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RemindMe">
         <activity
+            android:name=".QuizActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+        <activity
             android:name=".EditNotesActivity"
             android:exported="false"
-            android:parentActivityName=".NotesActivity"/>
+            android:parentActivityName=".NotesActivity" />
         <activity
             android:name=".NoteActivity"
             android:exported="false"
-            android:parentActivityName=".NotesActivity"/>
+            android:parentActivityName=".NotesActivity" />
         <activity
             android:name=".SettingsActivity"
             android:exported="false"
@@ -44,7 +48,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <receiver android:name=".AlarmReceiver"/>
+
+        <receiver android:name=".AlarmReceiver" />
     </application>
 
 </manifest>

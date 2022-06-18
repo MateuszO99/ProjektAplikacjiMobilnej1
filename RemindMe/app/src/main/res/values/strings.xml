@@ -9,7 +9,18 @@
     <string name="cancel_btn">Cancel</string>
     <string name="edit_btn">Edit</string>
     <string name="delete_btn">Delete</string>
+    <string name="quiz_btn">Quiz</string>
 
     <string name="add_note">add note</string>
+
+    <string name="question1">Was relative theory created by Isaac Newton?</string>
+    <string name="question2">Cannot a fire have a shadow?</string>
+    <string name="question3">Can air make shadows?</string>
+    <string name="trueString">TRUE</string>
+    <string name="falseString">FALSE</string>
+    <string name="prev">PREV</string>
+    <string name="next">NEXT</string>
+    <string name="show_correct_answer_button">SHOW CORRECT ANSWER</string>
+    <string name="reset">RESET</string>
 
 </resources>
