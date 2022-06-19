@@ -13,9 +13,11 @@
 
     <string name="add_note">add note</string>
 
-    <string name="question1">Was relative theory created by Isaac Newton?</string>
-    <string name="question2">Cannot a fire have a shadow?</string>
-    <string name="question3">Can air make shadows?</string>
+    <string name="question1">Andrzej Duda jest prezydentem Polski</string>
+    <string name="question2">II Wojna Swiatowa miała miejsce w latach 1939-1945</string>
+    <string name="question3">Stan wojenny mial miejsce w latach 1981-1983</string>
+    <string name="question4">Jarosław Kaczynski jest prezydentem Polski</string>
+    <string name="question5">Aktualnie trzeba nosic maseczki w miejscach publicznych</string>
     <string name="trueString">TRUE</string>
     <string name="falseString">FALSE</string>
     <string name="prev">PREV</string>

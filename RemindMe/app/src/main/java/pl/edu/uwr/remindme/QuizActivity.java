@@ -28,8 +28,10 @@ public class QuizActivity extends AppCompatActivity {
 
     private final Question[] questions = new Question[]{
             new Question(R.string.question1, true),
-            new Question(R.string.question2, false),
-            new Question(R.string.question3, true)
+            new Question(R.string.question2, true),
+            new Question(R.string.question3, true),
+            new Question(R.string.question4, false),
+            new Question(R.string.question5, false),
     };
     private boolean[] answer = new boolean[questions.length];
     private boolean[] answered = new boolean[questions.length];
