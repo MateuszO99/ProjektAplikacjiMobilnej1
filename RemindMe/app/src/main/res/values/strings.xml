@@ -30,5 +30,7 @@
     <string name="guess_number">What was the number?</string>
     <string name="confirm_btn">Confirm</string>
     <string name="reset_btn">Reset</string>
+    <string name="font_size_level_from_1_to_3">Font size level (from 1 to 3)</string>
+    <string name="home_address">Home address</string>
 
 </resources>
