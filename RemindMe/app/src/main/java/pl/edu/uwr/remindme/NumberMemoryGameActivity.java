@@ -2,10 +2,12 @@ package pl.edu.uwr.remindme;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.SharedPreferences;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -107,6 +109,29 @@ public class NumberMemoryGameActivity extends AppCompatActivity {
                 }, 2000);
             }
         });
+
+        SharedPreferences sharedPreferences = getSharedPreferences("MY_DATA", MODE_PRIVATE);
+        int fontSize = sharedPreferences.getInt("FONT_SIZE", 2);
+
+        ViewGroup layout = findViewById(R.id.activity_number_memory_game_layout);
+        for (int i = 0; i < layout.getChildCount(); i++){
+            View child = layout.getChildAt(i);
+
+            if (child instanceof Button){
+                Button button = (Button) child;
+                button.setTextSize(fontSize * 10);
+            }
+
+            else if (child instanceof EditText){
+                EditText editText = (EditText) child;
+                editText.setTextSize(fontSize * 10);
+            }
+
+            else if (child instanceof TextView){
+                TextView textView = (TextView) child;
+                textView.setTextSize(fontSize * 10);
+            }
+        }
     }
 
     private String generateNumber(int digits) {

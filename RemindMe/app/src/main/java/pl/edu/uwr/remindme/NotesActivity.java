@@ -5,10 +5,16 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 
@@ -33,6 +39,29 @@ public class NotesActivity extends AppCompatActivity {
         if (notes.isEmpty()){
             Intent intent = new Intent(NotesActivity.this, EditNotesActivity.class);
             startActivity(intent);
+        }
+
+        SharedPreferences sharedPreferences = getSharedPreferences("MY_DATA", MODE_PRIVATE);
+        int fontSize = sharedPreferences.getInt("FONT_SIZE", 2);
+
+        ViewGroup layout = findViewById(R.id.activity_notes_layout);
+        for (int i = 0; i < layout.getChildCount(); i++){
+            View child = layout.getChildAt(i);
+
+            if (child instanceof Button){
+                Button button = (Button) child;
+                button.setTextSize(fontSize * 10);
+            }
+
+            else if (child instanceof EditText){
+                EditText editText = (EditText) child;
+                editText.setTextSize(fontSize * 10);
+            }
+
+            else if (child instanceof TextView){
+                TextView textView = (TextView) child;
+                textView.setTextSize(fontSize * 10);
+            }
         }
     }
 

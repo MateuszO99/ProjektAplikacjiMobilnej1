@@ -4,8 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SettingsActivity"
-    android:background="@drawable/bg">
+    android:id="@+id/activity_settings_layout"
+    android:background="@drawable/bg"
+    tools:context=".SettingsActivity">
 
 
     <EditText
@@ -15,21 +16,55 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:minHeight="48dp"
-        android:text="Home address"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="@string/home_address"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+
+    <EditText
+        android:id="@+id/editTextFontSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:digits="123"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="1"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="saveData"
         android:text="@string/save"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextAddress"
-        android:onClick="saveData"/>
+        app:layout_constraintTop_toBottomOf="@+id/editTextFontSize"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:text="@string/home_address"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="@string/font_size_level_from_1_to_3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextAddress" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
