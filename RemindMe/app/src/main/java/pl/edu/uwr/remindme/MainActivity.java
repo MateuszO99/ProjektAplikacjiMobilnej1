@@ -38,4 +38,9 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(MainActivity.this, QuizActivity.class);
         startActivity(intent);
     }
+
+    public void numberMemoryGame(View view) {
+        Intent intent = new Intent(MainActivity.this, NumberMemoryGameActivity.class);
+        startActivity(intent);
+    }
 }

@@ -10,6 +10,7 @@
     <string name="edit_btn">Edit</string>
     <string name="delete_btn">Delete</string>
     <string name="quiz_btn">Quiz</string>
+    <string name="number_memory_btn">Number Memory Game</string>
 
     <string name="add_note">add note</string>
 
@@ -25,5 +26,9 @@
     <string name="show_correct_answer_button">SHOW CORRECT ANSWER</string>
     <string name="reset">RESET</string>
     <string name="save">Save</string>
+
+    <string name="guess_number">What was the number?</string>
+    <string name="confirm_btn">Confirm</string>
+    <string name="reset_btn">Reset</string>
 
 </resources>
