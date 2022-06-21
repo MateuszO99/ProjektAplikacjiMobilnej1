@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main_layout"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/bg">
+
+    <Button
+        android:id="@+id/button3"
+        android:backgroundTint="#1f57a5"
+        android:layout_width="294dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="28dp"
+        android:onClick="openGoHome"
+        android:text="Go home"
+        app:layout_constraintEnd_toEndOf="@+id/reminder"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button4"
+        android:backgroundTint="#1f57a5"
+        android:layout_width="290dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="4dp"
+        android:onClick="openSettings"
+        android:text="settings"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+    <Button
+        android:id="@+id/button2"
+        android:backgroundTint="#1f57a5"
+        android:layout_width="290dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="312dp"
+        android:onClick="openNotes"
+        android:text="Notes"
+        app:layout_constraintEnd_toEndOf="@+id/button3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/quizBtn"
+        android:backgroundTint="#1f57a5"
+        android:layout_width="294dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="8dp"
+        android:onClick="openQuiz"
+        android:text="@string/quiz_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button4" />
+
+    <Button
+        android:id="@+id/numbersMemoryBtn"
+        android:layout_width="296dp"
+        android:layout_height="64dp"
+        android:backgroundTint="#1f57a5"
+        android:onClick="numberMemoryGame"
+        android:text="@string/number_memory_btn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/quizBtn"
+        app:layout_constraintVertical_bias="0.033" />
+
+    <Button
+        android:id="@+id/reminder"
+        android:backgroundTint="#1f57a5"
+        android:layout_width="292dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="372dp"
+        android:layout_marginTop="88dp"
+        android:onClick="openReminder"
+        android:text="Reminder"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="121dp"
+        android:layout_height="68dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/logofin1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.972"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

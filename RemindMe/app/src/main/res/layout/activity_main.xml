@@ -8,41 +8,33 @@
     tools:context=".MainActivity"
     android:background="@drawable/bg">
 
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="294dp"
-        android:layout_height="58dp"
-        android:layout_marginBottom="224dp"
-        android:onClick="openSettings"
-        android:text="settings"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/button2"
-        app:layout_constraintTop_toBottomOf="@+id/button2"
-        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/reminder"
         android:layout_width="294dp"
         android:layout_height="58dp"
-        android:layout_marginStart="56dp"
+        android:layout_marginStart="60dp"
         android:layout_marginTop="108dp"
+        android:backgroundTint="#1f57a5"
         android:onClick="openReminder"
         android:text="Reminder"
         app:layout_constraintBottom_toTopOf="@+id/button3"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.991" />
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/button3"
         android:layout_width="294dp"
         android:layout_height="58dp"
         android:layout_marginStart="60dp"
-        android:layout_marginBottom="388dp"
+        android:layout_marginBottom="460dp"
+        android:backgroundTint="#1f57a5"
         android:onClick="openGoHome"
         android:text="Go home"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/reminder"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
@@ -50,10 +42,50 @@
         android:layout_width="294dp"
         android:layout_height="58dp"
         android:layout_marginTop="4dp"
+        android:backgroundTint="#1f57a5"
         android:onClick="openNotes"
         android:text="Notes"
         app:layout_constraintEnd_toEndOf="@+id/button3"
         app:layout_constraintTop_toBottomOf="@+id/button3" />
+
+    <Button
+        android:id="@+id/numbersMemoryBtn"
+        android:layout_width="296dp"
+        android:layout_height="60dp"
+        android:backgroundTint="#1f57a5"
+        android:onClick="numberMemoryGame"
+        android:text="@string/number_memory_btn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.617"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/quizBtn"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="294dp"
+        android:layout_height="58dp"
+        android:layout_marginBottom="224dp"
+        android:backgroundTint="#1f57a5"
+        android:onClick="openSettings"
+        android:text="settings"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/button2"
+        app:layout_constraintTop_toBottomOf="@+id/button2"
+        app:layout_constraintVertical_bias="0.025" />
+
+    <Button
+        android:id="@+id/quizBtn"
+        android:layout_width="297dp"
+        android:layout_height="55dp"
+        android:backgroundTint="#1f57a5"
+        android:onClick="openQuiz"
+        android:text="@string/quiz_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.614"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button4" />
 
     <ImageView
         android:id="@+id/imageView7"
@@ -65,29 +97,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/quizBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:onClick="openQuiz"
-        android:text="@string/quiz_btn"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button4"
-        app:layout_constraintVertical_bias="0.151" />
-
-    <Button
-        android:id="@+id/numbersMemoryBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/number_memory_btn"
-        android:onClick="numberMemoryGame"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/quizBtn" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -18,18 +18,18 @@
         android:id="@+id/txtNumber"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="32sp"
-        android:layout_marginTop="20dp" />
+        android:layout_marginTop="20dp"
+        android:textSize="32sp" />
 
     <EditText
         android:id="@+id/editNumber"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
         android:layout_marginTop="20dp"
-        android:inputType="numberSigned"
         android:digits="1234567890"
-        android:hint="@string/guess_number" />
+        android:ems="10"
+        android:hint="@string/guess_number"
+        android:inputType="numberSigned" />
 
     <Button
         android:id="@+id/btnConfirm"

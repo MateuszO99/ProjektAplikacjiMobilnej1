@@ -10,24 +10,40 @@
 
     <EditText
         android:id="@+id/editDescription"
-        android:layout_width="0dp"
-        android:layout_height="100sp"
-        android:layout_marginTop="36dp"
+        android:layout_width="725dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="8dp"
         android:autofillHints=""
         android:ems="10"
         android:hint="@string/description"
         android:inputType="textPersonName"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintHorizontal_bias="0.571"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTitle" />
 
+    <EditText
+        android:id="@+id/editCreateDate"
+        android:layout_width="731dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="16dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/date_btn"
+        android:inputType="date"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editDescription" />
+
     <Button
         android:id="@+id/cancelBtn"
+
+        android:layout_width="164dp"
         android:backgroundTint="#1f57a5"
-        android:layout_width="match_parent"
-        android:layout_height="85dp"
+        android:layout_height="52dp"
         android:layout_weight="1"
         android:width="0dp"
         android:text="@string/cancel_btn"
@@ -42,23 +58,23 @@
     <Button
         android:id="@+id/saveBtn"
         android:backgroundTint="#1f57a5"
-        android:layout_width="match_parent"
-        android:layout_height="87dp"
-        android:layout_marginTop="92dp"
+        android:layout_width="163dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="4dp"
         android:layout_weight="1"
         android:text="@string/save_btn"
         android:textAllCaps="false"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editCreateDate" />
 
     <EditText
         android:id="@+id/editTitle"
-        android:layout_width="0dp"
-        android:layout_height="61dp"
-        android:layout_marginTop="100sp"
+        android:layout_width="731dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
         android:layout_weight="1"
         android:autofillHints=""
         android:ems="10"
@@ -66,23 +82,8 @@
         android:inputType="textPersonName"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/editCreateDate"
-        android:layout_width="0dp"
-        android:layout_height="66dp"
-        android:layout_marginTop="20dp"
-        android:autofillHints=""
-        android:ems="10"
-        android:hint="@string/date_btn"
-        android:inputType="date"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.536"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editDescription" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

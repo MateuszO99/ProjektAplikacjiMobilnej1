@@ -44,6 +44,7 @@
         android:textAllCaps="false"
         android:textSize="24sp"
         app:layout_constraintEnd_toStartOf="@+id/deleteBtn"
+        app:layout_constraintHorizontal_bias="0.828"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/detailCreateDate" />
 
@@ -64,8 +65,8 @@
         android:backgroundTint="#1f57a5"
         android:layout_width="130dp"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="216dp"
         android:text="@string/delete_btn"
-        android:layout_marginRight="56sp"
         android:textAllCaps="false"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
