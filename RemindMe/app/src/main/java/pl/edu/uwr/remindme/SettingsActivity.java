@@ -21,7 +21,6 @@ public class SettingsActivity extends AppCompatActivity {
     private SharedPreferences sharedPreferences;
     private String address;
     private Integer fontSize;
-    Spinner spinner;
 
     @SuppressLint({"SetTextI18n", "CutPasteId"})
     @Override
@@ -40,24 +39,7 @@ public class SettingsActivity extends AppCompatActivity {
         fontSizeEditText.setText(fontSize.toString());
 
         ViewGroup layout = findViewById(R.id.activity_settings_layout);
-        for (int i = 0; i < layout.getChildCount(); i++){
-            View child = layout.getChildAt(i);
-
-            if (child instanceof Button){
-                Button button = (Button) child;
-                button.setTextSize(fontSize * 10);
-            }
-
-            else if (child instanceof EditText){
-                EditText editText = (EditText) child;
-                editText.setTextSize(fontSize * 10);
-            }
-
-            else if (child instanceof TextView){
-                TextView textView = (TextView) child;
-                textView.setTextSize(fontSize * 10);
-            }
-        }
+        Common.changeFontSize(SettingsActivity.this, layout);
 
     }
 

@@ -62,23 +62,6 @@ public class NoteActivity extends AppCompatActivity {
         int fontSize = sharedPreferences.getInt("FONT_SIZE", 2);
 
         ViewGroup layout = findViewById(R.id.activity_note_layout);
-        for (int i = 0; i < layout.getChildCount(); i++){
-            View child = layout.getChildAt(i);
-
-            if (child instanceof Button){
-                Button button = (Button) child;
-                button.setTextSize(fontSize * 10);
-            }
-
-            else if (child instanceof EditText){
-                EditText editText = (EditText) child;
-                editText.setTextSize(fontSize * 10);
-            }
-
-            else if (child instanceof TextView){
-                TextView textView = (TextView) child;
-                textView.setTextSize(fontSize * 10);
-            }
-        }
+        Common.changeFontSize(NoteActivity.this, layout);
     }
 }
